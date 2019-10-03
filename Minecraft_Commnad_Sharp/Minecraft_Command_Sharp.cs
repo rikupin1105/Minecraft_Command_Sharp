@@ -17,10 +17,10 @@ namespace Minecraft_Command_Sharp
             //rcon.password= 任意
             //enable-rcon=true
 
-            IPAddress ipAddress = IPAddress.Parse("192.168.0.108");
-            ushort port = 25575;
-            var password = "password";
-            var command = "/time set day";
+            IPAddress ipAddress = IPAddress.Parse("IPアドレスを入力");
+            ushort port = ポート番号を入力;
+            var password = "パスワードを入力";
+            var command = "コマンドを入力";
             var connection = new CoreRCON.RCON(ipAddress, port, password);
             await connection.SendCommandAsync(command);
 
